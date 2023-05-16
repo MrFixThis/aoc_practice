@@ -16,7 +16,7 @@ fn max_cal_top_3() -> Result<usize> {
     Ok(read_vec_by_sep::<usize>("day1_input.txt", "\n\n")?
         .into_iter()
         .map(|v| v.into_iter().sum::<usize>())
-        .sorted_by(|a, b| b.cmp(&a))
+        .sorted_by(|a, b| b.cmp(a))
         .take(3)
         .sum())
 }
