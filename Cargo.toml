@@ -1,0 +1,12 @@
+[workspace.package]
+edition = "2021"
+authors = ["MrFixThis <mrfixthis55@gmail.com>"]
+
+[workspace]
+members = [
+    "aoc_2022"
+]
+
+[workspace.dependencies]
+anyhow = "1.0.71"
+itertools = "0.10.5"
